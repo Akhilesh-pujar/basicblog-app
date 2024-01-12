@@ -2,11 +2,8 @@
 module.exports = {
     // Database configuration
     database: {
-      url: process.env.MONGODB_URI || 'mongodb://localhost:27017/blog-app',
-      options: {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      },
+      url: process.env.MONGODB_URI || 'mongodb://0.0.0.0:27017/blog-app',
+    
     },
   
     // JWT configuration

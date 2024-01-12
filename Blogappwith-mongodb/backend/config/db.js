@@ -4,7 +4,7 @@ const config = require('./config');
 
 const connectToDatabase = async () => {
   try {
-    await mongoose.connect(config.database.url, config.database.options);
+    await mongoose.connect(config.database.url);
     console.log('Connected to the database');
   } catch (error) {
     console.error('Error connecting to the database:', error.message);
